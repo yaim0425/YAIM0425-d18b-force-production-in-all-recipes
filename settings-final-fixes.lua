@@ -19,7 +19,7 @@ require("__" .. "YAIM0425-d00b-core" .. "__.settings-final-fixes")
 
 
 ---------------------------------------------------------------------------
----[ Contenedor de este archivo ]---
+---[ Información del MOD ]---
 ---------------------------------------------------------------------------
 
 local This_MOD = GMOD.get_id_and_name()
@@ -39,7 +39,7 @@ GMOD[This_MOD.id] = This_MOD
 --- Opciones
 This_MOD.setting = {}
 
---- Opcion: time
+--- Opcion: value
 table.insert(This_MOD.setting, {
     type = "int",
     name = "value",
