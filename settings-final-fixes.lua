@@ -10,7 +10,7 @@
 ---[ Cargar las funciones de GMOD ]---
 ---------------------------------------------------------------------------
 
-require("__" .. "YAIM0425-i0MOD00-core" .. "__.settings-final-fixes")
+require("__" .. "YAIM0425-d00b-core" .. "__.settings-final-fixes")
 
 ---------------------------------------------------------------------------
 
@@ -42,17 +42,15 @@ This_MOD.setting = {}
 --- Opcion: time
 table.insert(This_MOD.setting, {
     type = "int",
-    name = "time",
-    localised_name = { "description.crafting-time" },
+    name = "value",
+    localised_name = { "item-group-name.production" },
     localised_description =
-        "Min. 1 [ 1seg ]\n" ..
-        "Max. 65k [ 18h ]\n" ..
-        "Def. 900 [ 15min ]\n" ..
-        "\n" ..
-        "15min * 60seg = 900seg",
-    minimum_value = 1,     --- 1 segundo
-    maximum_value = 65000, --- 18 horas
-    default_value = 900    --- 15 minutos
+        "Min. 1\n" ..
+        "Max. 100\n" ..
+        "Def. 10",
+    minimum_value = 1,
+    maximum_value = 100,
+    default_value = 10
 })
 
 ---------------------------------------------------------------------------------------------------
